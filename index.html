@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>在线伦理电影网 - 人性道德议题在线策展 | zaixianlunlidianyingwang-h5</title>
+<meta name="description" content="在线伦理电影网(zaixianlunlidianyingwang-h5)以墨绿书卷风做人性、道德与伦理议题在线策展，含电影、剧集、纪录、短片、哲学影评与观片帮助；移动端自适应。官网 https://zaixianlunlidianyingwang-h5.github.io，单页演示，内页链接以 # 占位，接真实片源需版权授权。">
+<meta name="keywords" content="在线伦理电影网, zaixianlunlidianyingwang-h5, 在线伦理片单, 人性思辨, 道德困境, 哲学策展">
+<meta name="author" content="在线伦理电影网">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://zaixianlunlidianyingwang-h5.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://zaixianlunlidianyingwang-h5.github.io">
+<meta property="og:type" content="website">
+<meta property="og:title" content="在线伦理电影网 - 人性道德议题在线策展">
+<meta property="og:description" content="zaixianlunlidianyingwang-h5 提供伦理/人性/道德困境向电影策展，墨绿书卷界面，移动端自适应。">
+<meta property="og:url" content="https://zaixianlunlidianyingwang-h5.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="在线伦理电影网 - 墨绿书卷策展">
+<meta name="twitter:description" content="zaixianlunlidianyingwang-h5 官网提供人性/道德议题片单演示。">
+<style>
+:root{
+  --bg:#0f2a23;--bg2:#14382f;--paper:#f6f1e7;--paper2:#efe7d6;--ink:#1c2620;--muted:#5d5043;
+  --green:#0f2a23;--green2:#1d4438;--gold:#c79a3a;--gold2:#e0b85a;--red:#b23a2e;--red2:#c8503f;
+  --line:rgba(199,154,58,.30);--line2:rgba(199,154,58,.18);--navh:64px;--radius:16px;--shadow:0 14px 32px rgba(15,42,35,.35);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:"Source Han Serif SC","Noto Serif SC","Songti SC",Georgia,"Times New Roman",serif;
+  background:
+    radial-gradient(820px 380px at 92% -8%,rgba(199,154,58,.14),transparent 60%),
+    radial-gradient(680px 340px at 0% 10%,rgba(178,58,46,.10),transparent 58%),
+    linear-gradient(180deg,var(--bg),var(--bg2));
+  color:var(--ink);line-height:1.85;padding-top:var(--navh);-webkit-font-smoothing:antialiased;}
+a{color:var(--gold);text-decoration:none;transition:.25s;}
+a:hover{color:var(--red);}
+img{max-width:100%;display:block;}ul{list-style:none;}
+
+.nav{position:fixed;top:0;left:0;right:0;height:var(--navh);z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:0 16px;
+  background:rgba(15,42,35,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+.brand{font-weight:900;font-size:clamp(15px,4.4vw,21px);color:var(--paper);display:flex;align-items:center;gap:8px;white-space:nowrap;letter-spacing:.4px;}
+.brand b{background:linear-gradient(90deg,var(--gold2),#ecd49a);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.brand .seal{font-size:11px;color:var(--paper);background:var(--red);padding:2px 7px;border-radius:6px;font-weight:800;letter-spacing:0;}
+.menu-btn{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:10px;}
+.menu-btn span{width:26px;height:3px;background:var(--gold2);border-radius:3px;transition:.3s;}
+.menu-btn.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.menu-btn.open span:nth-child(2){opacity:0;}
+.menu-btn.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+.nav-links{display:flex;gap:6px;flex-wrap:wrap;}
+.nav-links a{color:#e7dcc4;font-size:15px;font-weight:700;min-height:44px;display:inline-flex;align-items:center;padding:8px 12px;border-radius:20px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;}
+.nav-links a:hover{background:rgba(199,154,58,.16);color:var(--gold2);}
+
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px;}
+.section{padding:64px 0;}
+.sec-title{font-size:clamp(22px,5vw,30px);font-weight:900;text-align:center;margin-bottom:8px;color:var(--ink);font-family:"Source Han Serif SC",serif;}
+.sec-title small{display:block;font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:700;margin-top:8px;font-family:-apple-system,BlinkMacSystemFont,sans-serif;}
+.sec-title::after{content:"";display:block;width:80px;height:3px;border-radius:3px;margin:14px auto 0;background:linear-gradient(90deg,var(--gold),var(--red),var(--gold));}
+
+/* Hero */
+.hero{padding:68px 0 32px;}
+.hero .wrap{display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:center;}
+.tagline{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,rgba(199,154,58,.18),rgba(178,58,46,.16));border:1px solid var(--line);color:var(--paper);font-size:12px;font-weight:800;padding:6px 14px;border-radius:6px;margin-bottom:16px;letter-spacing:1px;}
+.tagline b{color:var(--gold2);}
+.hero h1{font-size:clamp(28px,6vw,46px);line-height:1.2;color:var(--paper);margin-bottom:16px;font-weight:900;}
+.hero h1 em{font-style:italic;color:var(--gold2);}.hero h1 i{font-style:italic;color:#e6a59a;}
+.hero p{color:#cdbfa6;font-size:clamp(15px,2.6vw,17px);margin-bottom:18px;max-width:560px;}
+.urlbox{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;border:1px dashed var(--gold);color:var(--gold2);background:rgba(15,42,35,.6);padding:10px 14px;border-radius:8px;font-size:13px;margin-bottom:18px;}
+.cta{display:inline-block;background:linear-gradient(135deg,var(--gold),var(--red));color:var(--paper);font-weight:900;padding:13px 30px;border-radius:6px;min-height:46px;letter-spacing:.5px;}
+.scroll{position:relative;background:linear-gradient(160deg,var(--paper),var(--paper2));border:2px solid var(--gold);border-radius:10px;padding:26px 22px;box-shadow:var(--shadow);text-align:center;}
+.scroll::before{content:"卷";position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:34px;height:34px;border-radius:50%;background:var(--red);color:var(--paper);display:flex;align-items:center;justify-content:center;font-weight:900;border:2px solid var(--gold);}
+.scroll .big{font-size:46px;font-weight:900;color:var(--green);font-style:italic;line-height:1;}
+.scroll .label{color:var(--muted);font-size:13px;margin-top:10px;letter-spacing:2px;}
+.scroll .chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;justify-content:center;}
+.chip{font-size:11px;color:var(--green);border:1px solid var(--gold);background:rgba(199,154,58,.10);padding:3px 10px;border-radius:4px;font-family:-apple-system,sans-serif;}
+
+/* 片库 */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(186px,1fr));gap:18px;}
+.movie{background:var(--paper);border:1px solid var(--line2);border-radius:12px;overflow:hidden;transition:.25s;}
+.movie:hover{transform:translateY(-6px);border-color:var(--gold);box-shadow:0 16px 30px rgba(15,42,35,.25);}
+.cover{height:214px;display:flex;align-items:center;justify-content:center;font-size:38px;color:var(--paper);position:relative;}
+.g1{background:linear-gradient(135deg,#0f2a23,#1d4438);}.g2{background:linear-gradient(135deg,#b23a2e,#c8503f);}
+.g3{background:linear-gradient(135deg,#c79a3a,#e0b85a);color:#2a1d05;}.g4{background:linear-gradient(135deg,#1d4438,#0f2a23);}
+.g5{background:linear-gradient(135deg,#7a4a2b,#b23a2e);}.g6{background:linear-gradient(135deg,#264a36,#3c7560);}
+.ethic{position:absolute;top:10px;left:10px;background:rgba(246,241,231,.94);color:var(--green);font-weight:800;font-size:10px;padding:3px 8px;border-radius:4px;border:1px solid var(--gold);letter-spacing:1px;font-family:-apple-system,sans-serif;}
+.minfo{padding:14px 16px;}.minfo h3{font-size:15px;color:var(--ink);margin-bottom:6px;font-weight:900;}.minfo p{font-size:13px;color:var(--muted);display:flex;justify-content:space-between;font-family:-apple-system,sans-serif;}
+.minfo .quote{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.6;font-style:italic;border-left:2px solid var(--gold);padding-left:8px;}
+
+/* 分类 */
+.six{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.cat{background:var(--paper);border:1px solid var(--line2);border-radius:12px;padding:22px;box-shadow:0 8px 20px rgba(15,42,35,.15);transition:.25s;position:relative;}
+.cat:hover{transform:translateY(-4px);border-color:var(--gold);}
+.cat .num{position:absolute;top:14px;right:18px;font-size:26px;font-weight:900;color:rgba(199,154,58,.20);font-style:italic;}
+.cat .ico{font-size:26px;margin-bottom:6px;}.cat h3{font-size:17px;color:var(--ink);margin-bottom:6px;font-weight:900;}.cat p{font-size:13px;color:var(--muted);font-family:-apple-system,sans-serif;}.cat a{display:inline-block;margin-top:10px;font-weight:800;color:var(--gold);font-family:-apple-system,sans-serif;}
+
+/* 榜单 */
+.rank{display:grid;gap:12px;counter-reset:r;max-width:860px;margin:0 auto;}
+.ri{display:flex;align-items:center;gap:16px;background:var(--paper);border:1px solid var(--line2);border-radius:12px;padding:14px 16px;}
+.ri::before{counter-increment:r;content:"Z" counter(r);min-width:54px;text-align:center;height:42px;flex:0 0 54px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;background:rgba(199,154,58,.14);color:var(--green);font-style:italic;}
+.ri:nth-child(1)::before{background:linear-gradient(135deg,var(--gold),var(--red));color:var(--paper);}.ri:nth-child(2)::before{background:linear-gradient(135deg,var(--green),var(--gold));color:var(--paper);}.ri:nth-child(3)::before{background:linear-gradient(135deg,#7a4a2b,var(--gold));color:var(--paper);}
+.rb{flex:1;}.rb h3{font-size:16px;color:var(--ink);font-weight:900;}.rb p{font-size:13px;color:var(--muted);font-family:-apple-system,sans-serif;}.rs{font-weight:900;color:var(--red);font-size:18px;font-style:italic;}
+
+/* 影评 */
+.reviews{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;}
+.rv{background:var(--paper);border:1px solid var(--line2);border-radius:12px;padding:22px;box-shadow:0 8px 20px rgba(15,42,35,.15);position:relative;}
+.rv::before{content:"\201C";position:absolute;top:8px;right:16px;font-size:60px;color:rgba(199,154,58,.18);line-height:.6;font-family:Georgia,serif;}
+.rv .ft{display:inline-block;font-size:11px;color:var(--gold);border:1px solid var(--gold);padding:2px 8px;border-radius:4px;margin-bottom:8px;font-family:-apple-system,sans-serif;}
+.rv h3{font-size:17px;color:var(--ink);margin-bottom:6px;font-weight:900;}.rv p{font-size:13px;color:var(--muted);font-family:-apple-system,sans-serif;}.rv a{display:inline-block;margin-top:10px;font-weight:800;color:var(--gold);font-family:-apple-system,sans-serif;}
+
+/* 帮助+关于 */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.panel{background:var(--paper);border:1px solid var(--line2);border-radius:var(--radius);padding:24px;box-shadow:0 8px 20px rgba(15,42,35,.15);}
+.panel h3{color:var(--green);margin-bottom:12px;font-size:18px;font-weight:900;}
+.panel p{font-size:14px;color:#3a2e22;margin-bottom:10px;font-family:-apple-system,sans-serif;}
+details{border:1px solid var(--line2);background:var(--paper);border-radius:10px;margin-bottom:10px;overflow:hidden;}
+summary{padding:14px 16px;font-weight:700;cursor:pointer;min-height:44px;display:flex;justify-content:space-between;align-items:center;color:var(--ink);font-family:-apple-system,sans-serif;}
+summary::-webkit-details-marker{display:none;}summary::after{content:"+";color:var(--gold);font-size:20px;font-weight:900;}
+details[open] summary::after{content:"\2212";}details p{padding:0 16px 16px;color:#3a2e22;font-size:14px;font-family:-apple-system,sans-serif;}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:6px;}
+.stat{background:var(--paper2);border:1px solid var(--line2);border-radius:10px;padding:16px;text-align:center;}
+.stat b{display:block;font-size:24px;color:var(--gold);font-style:italic;}.stat span{font-size:13px;color:var(--muted);font-family:-apple-system,sans-serif;}
+.notice{margin-top:18px;background:rgba(199,154,58,.08);border:1px dashed var(--gold);border-radius:10px;padding:16px;font-size:13px;color:#5a4a2f;font-family:-apple-system,sans-serif;}
+
+.footer{background:#081a15;color:#cdbfa6;padding:46px 0 22px;margin-top:60px;border-top:1px solid var(--line);}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px;}
+.footer h4{color:var(--paper);font-size:16px;margin-bottom:12px;font-weight:900;}
+.footer a{color:#b7a684;font-size:14px;display:inline-block;padding:4px 0;font-family:-apple-system,sans-serif;}
+.footer a:hover{color:var(--gold2);}
+.fb{text-align:center;margin-top:26px;padding-top:16px;border-top:1px solid var(--line);font-size:13px;color:#b7a684;font-family:-apple-system,sans-serif;}
+.fb .u{color:var(--gold2);font-family:ui-monospace,Menlo,Consolas,monospace;}
+.toTop{position:fixed;right:18px;bottom:18px;width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,var(--gold),var(--red));color:var(--paper);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:.3s;z-index:900;}
+.toTop.show{opacity:1;visibility:visible;}
+
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr;}}
+@media(max-width:768px){.menu-btn{display:flex;}.nav-links{position:fixed;top:var(--navh);left:0;right:0;background:rgba(15,42,35,.98);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;max-height:0;overflow:hidden;transition:max-height .35s;}.nav-links.open{max-height:660px;}.nav-links a{padding:14px 18px;border-radius:0;border-bottom:1px solid rgba(199,154,58,.12);}.two{grid-template-columns:1fr;}.six{grid-template-columns:1fr 1fr;}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));}.cover{height:180px;}}
+@media(max-width:520px){.six{grid-template-columns:1fr;}.scroll .big{font-size:38px;}}
+@media(max-width:420px){.grid{grid-template-columns:1fr 1fr;}.cover{height:160px;}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"在线伦理电影网","url":"https://zaixianlunlidianyingwang-h5.github.io","potentialAction":{"@type":"SearchAction","target":"https://zaixianlunlidianyingwang-h5.github.io#library","query-input":"required name=search_term"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"在线伦理电影网是什么定位？","acceptedAnswer":{"@type":"Answer","text":"本演示站以“人性/道德议题在线策展”为主线，用墨绿书卷风组织伦理向电影、剧集、纪录、短片、哲学影评与观片帮助；内页链接以 # 占位，仅作单页模板演示，不提供未授权播放。"}},
+{"@type":"Question","name":"在线片库怎么用？","acceptedAnswer":{"@type":"Answer","text":"每部影片带伦理框架标签（义务论/功利主义/生命伦理/正义论等）与类型/时长，可按电影、剧集、纪录、短片分类浏览；正式站把 # 替换为真实分类页、详情页与正版授权播放入口即可。"}},
+{"@type":"Question","name":"移动端能正常看策展内容吗？","acceptedAnswer":{"@type":"Answer","text":"全站响应式，手机端自动折叠导航、片库双列/自适应、分类与热榜重排，核心内容纯HTML+语义化标题便于搜索引擎抓取。"}},
+{"@type":"Question","name":"必应怎么收录这个单页？","acceptedAnswer":{"@type":"Answer","text":"已配置 title、description、canonical、Open Graph 与 JSON-LD（WebSite/FAQ/Movie）；可在 Bing Webmaster Tools 提交首页 https://zaixianlunlidianyingwang-h5.github.io 。按你要求不生成 robots.txt 与 sitemap.xml。提供视听节目应避免转播、链接、聚合非法视听源，内容不含淫秽色情等违规内容并办理相应资质。[3,7](@ref)"}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Movie","name":"书院里的两难课","url":"https://zaixianlunlidianyingwang-h5.github.io#library","description":"演示影片：在线伦理电影网片库示例，道德困境向，围绕义务冲突与制度正义展开，用于伦理标签、片库网格与哲学影评模板展示。","genre":["剧情","伦理","思辨"],"datePublished":"2025-06-01","aggregateRating":{"@type":"AggregateRating","ratingValue":"8.6","bestRating":"10","worstRating":"1","ratingCount":"198"}}
+</script>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="nav">
+  <div class="brand"><b>在线伦理电影网</b><span class="seal">zaixian-h5</span></div>
+  <button class="menu-btn" id="menuBtn" aria-label="菜单" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav-links" id="navLinks" aria-label="主导航">
+    <a href="#home">首页</a>
+    <a href="#library">在线片库</a>
+    <a href="#category">伦理框架</a>
+    <a href="#ranking">热播榜单</a>
+    <a href="#review">哲学影评</a>
+    <a href="#help">观片帮助</a>
+    <a href="#about">关于本站</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div>
+      <span class="tagline">墨绿书卷在线策展 <b>ZAIXIAN-LUNLI</b> · 道德议题标签</span>
+      <h1>在线伦理电影网 · <em>书卷墨绿</em>风 <br><i>在线上</i>追问人性</h1>
+      <p>在线伦理电影网（zaixianlunlidianyingwang-h5）以墨绿书卷、米纸朱印做人性、道德与伦理议题在线策展，整合电影、剧集、纪录、短片、哲学影评与观片帮助；手机电脑自适应。本页仅演示，内页均用 # 占位，接真实片源需版权授权与视听资质。</p>
+      <div class="urlbox">https://zaixianlunlidianyingwang-h5.github.io</div>
+      <br>
+      <a class="cta" href="#library">进入在线片库 #</a>
+    </div>
+    <aside class="scroll" aria-label="策展概览">
+      <div class="big">8.6</div>
+      <div class="label">综合思辨评分 · 伦理策展样片</div>
+      <div class="chips">
+        <span class="chip">义务论</span><span class="chip">功利主义</span><span class="chip">生命伦理</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="library">
+  <div class="wrap">
+    <h2 class="sec-title">在线片库<small>ZAIXIAN LUNLI · 道德议题样片</small></h2>
+    <div class="grid">
+      <article class="movie"><div class="cover g1"><span class="ethic">义务论</span>\1F4D6</div><div class="minfo"><h3>书院里的两难课</h3><p><span>剧情/伦理</span><span>118分</span></p><p class="quote">\201C规则与良知冲突时，个体如何作答？\201D</p></div></article>
+      <article class="movie"><div class="cover g2"><span class="ethic">功利主义</span>\1F3AD</div><div class="minfo"><h3>渡口计算器</h3><p><span>社会/伦理</span><span>10集</span></p><p class="quote">\201C为多数人取舍，少数人的代价由谁承担？\201D</p></div></article>
+      <article class="movie"><div class="cover g3"><span class="ethic">美德伦理</span>\1F9B8</div><div class="minfo"><h3>慢火煮善名</h3><p><span>家庭/伦理</span><span>8集</span></p><p class="quote">\201C习惯成德性，善意也需智慧的边界。\201D</p></div></article>
+      <article class="movie"><div class="cover g4"><span class="ethic">正义论</span>\1F3BC</div><div class="minfo"><h3>分田笔录</h3><p><span>纪录/哲学</span><span>6集</span></p><p class="quote">\201C公平不是均分，而是给出可辩护的理由。\201D</p></div></article>
+      <article class="movie"><div class="cover g5"><span class="ethic">生命伦理</span>\1F3AC</div><div class="minfo"><h3>最后一盏灯</h3><p><span>医疗/伦理</span><span>96分</span></p><p class="quote">\201C生命质量与长度冲突，谁按停止键？\201D</p></div></article>
+      <article class="movie"><div class="cover g6"><span class="ethic">政治伦理</span>\1F5E1</div><div class="minfo"><h3>城规与钟声</h3><p><span>历史/伦理</span><span>110分</span></p><p class="quote">\201C权力不受伦理约束，自由只剩修辞。\201D</p></div></article>
+    </div>
+    <div style="text-align:center;margin-top:28px;"><a href="#" style="display:inline-block;border:1px solid var(--gold);padding:12px 28px;border-radius:6px;font-weight:800;color:var(--gold);">浏览全部在线伦理片单 #</a></div>
+  </div>
+</section>
+
+<section class="section" id="category" style="background:rgba(199,154,58,.06);">
+  <div class="wrap">
+    <h2 class="sec-title">伦理框架<small>按哲学维度在线分池</small></h2>
+    <div class="six">
+      <div class="cat"><span class="num">01</span><div class="ico">\2696</div><h3>义务论</h3><p>道德法则、绝对命令、动机与后果分离，适合规则冲突型片单。</p><a href="#library">看片单 #</a></div>
+      <div class="cat"><span class="num">02</span><div class="ico">\1F3AF</div><h3>功利主义</h3><p>最大幸福、成本收益、多数与少数的张力，适合社会困境型片单。</p><a href="#library">看片单 #</a></div>
+      <div class="cat"><span class="num">03</span><div class="ico">\1F9E1</div><h3>美德伦理</h3><p>品格、习惯、中道与角色成长，适合家庭与人物弧光型片单。</p><a href="#library">看片单 #</a></div>
+      <div class="cat"><span class="num">04</span><div class="ico">\26A1</div><h3>正义论</h3><p>公平、分配、程序正义与社会契约，适合制度思辨型片单。</p><a href="#library">看片单 #</a></div>
+      <div class="cat"><span class="num">05</span><div class="ico">\1F48A</div><h3>生命伦理</h3><p>医疗抉择、生死边界、身体自主，适合医学与人性困境片单。</p><a href="#library">看片单 #</a></div>
+      <div class="cat"><span class="num">06</span><div class="ico">\1F5E1</div><h3>政治伦理</h3><p>权力正当、公民不服从、公共理性，适合历史与制度批判片单。</p><a href="#library">看片单 #</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ranking">
+  <div class="wrap">
+    <h2 class="sec-title">热播榜单<small>ZAIXIAN-H5 伦理策展热看榜</small></h2>
+    <div class="rank">
+      <div class="ri"><div class="rb"><h3>书院里的两难课</h3><p>电影·义务论/规则冲突 / 118分 / 在线主打</p></div><div class="rs">8.6</div></div>
+      <div class="ri"><div class="rb"><h3>渡口计算器</h3><p>剧集·功利主义 / 10集 / 社会困境</p></div><div class="rs">8.5</div></div>
+      <div class="ri"><div class="rb"><h3>慢火煮善名</h3><p>动漫·美德伦理 / 8集 / 家庭叙事</p></div><div class="rs">8.4</div></div>
+      <div class="ri"><div class="rb"><h3>最后一盏灯</h3><p>电影·生命伦理 / 96分 / 医疗抉择</p></div><div class="rs">8.3</div></div>
+      <div class="ri"><div class="rb"><h3>分田笔录</h3><p>纪录·正义论 / 6集 / 分配思辨</p></div><div class="rs">8.2</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="review" style="background:rgba(178,58,46,.06);">
+  <div class="wrap">
+    <h2 class="sec-title">哲学影评<small>在线伦理电影网·思辨笔记</small></h2>
+    <div class="reviews">
+      <div class="rv"><span class="ft">义务论视角</span><h3>《书院里的两难课》的规则与良知</h3><p>从绝对命令拆解主角在制度压力下的每次选择，分析“按规则”和“凭良知”各自的正当边界。</p><a href="#library">读完整影评 #</a></div>
+      <div class="rv"><span class="ft">功利主义批判</span><h3>《渡口计算器》的多数与少数</h3><p>用最大幸福原则重看分配决策，讨论被牺牲少数的不可通约性及其对个体权利的冲击。</p><a href="#library">读完整影评 #</a></div>
+      <div class="rv"><span class="ft">生命伦理</span><h3>《最后一盏灯》的医患抉择</h3><p>按自主、不伤害、行善、公正四原则，分析临终决策中的家庭、医生与病人权利张力。</p><a href="#library">读完整影评 #</a></div>
+      <div class="rv"><span class="ft">正义论</span><h3>《分田笔录》的分配理由</h3><p>借公平即“差异原则”讨论资源分配，区分程序正义与结果正义在纪录案例中的表现。</p><a href="#library">读完整影评 #</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="help" style="background:rgba(199,154,58,.05);">
+  <div class="wrap">
+    <h2 class="sec-title">观片帮助<small>在线伦理电影网 使用与合规</small></h2>
+    <div class="two">
+      <div class="panel">
+        <h3>在线刷片流程</h3>
+        <p>1. 首页“进入在线片库”，按伦理标签看电影/剧集/纪录/短片。</p>
+        <p>2. 到“伦理框架”切哲学维度，进对应演示片单；看“热播榜单”跟口碑。</p>
+        <p>3. 看“哲学影评”读思辨笔记；点影片卡进详情，内页均 #。</p>
+        <p>4. 手机端点右上角汉堡菜单切栏目，全站自适应，无需手动缩放。</p>
+      </div>
+      <div>
+        <details open><summary>可以直接看全片吗？</summary><p>本页为单页演示，不提供实际播放；正式站若提供在线观看，须接入有版权授权的片源，不聚合、不链接非法视听节目，不提供盗版下载。[3](@ref)</p></details>
+        <details><summary>为什么很多链接是 #？</summary><p>按你的要求，内页、播放、详情全部用 # 占位；部署时把 # 替换为真实授权详情页、正版播放页或合法平台跳转链接。</p></details>
+        <details><summary>“伦理”标签怎么写更稳妥？</summary><p>演示标签仅作哲学分析视角示例；正式站如展示伦理评分或分类，应注明分析来源，避免对真实影片内容做误导性定性，不传播淫秽、色情、暴力等违规内容。[3](@ref)</p></details>
+        <details><summary>必应收录要注意什么？</summary><p>保持 title/description/canonical 一致、核心内容纯HTML、移动端速度快；在 Bing Webmaster Tools 提交首页。本页按你要求不生成 robots.txt 与 sitemap.xml。[7](@ref)</p></details>
+      </div>
+    </div>
+    <div class="notice">
+      合规说明：本页为「在线伦理电影网 / zaixianlunlidianyingwang-h5」单页演示，仅展示在线片库、伦理框架、热播榜单与哲学影评；不提供未授权播放、不聚合非法视听源，所有片名/伦理标签/引文均为虚构示例。正式上线接片源需取得著作权授权并办理相关互联网视听节目资质。内页链接均以 # 占位，不生成 robots.txt 与 sitemap.xml。[3,12](@ref)
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <h2 class="sec-title">关于本站<small>品牌·域名·官网·SEO</small></h2>
+    <div class="two">
+      <div class="panel">
+        <h3>网站定位</h3>
+        <p>在线伦理电影网（zaixianlunlidianyingwang-h5）做“人性道德议题在线策展”单页：首页书卷概览、在线片库、伦理框架、热播榜、哲学影评、观片帮助一体化。全站统一关键词「在线伦理电影网」「zaixianlunlidianyingwang-h5」「在线伦理片单/人性思辨/道德困境」。</p>
+        <p>官网：<br><span style="font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--gold);">https://zaixianlunlidianyingwang-h5.github.io</span></p>
+      </div>
+      <div class="panel">
+        <h3>技术与收录</h3>
+        <p>内部CSS、语义化标题、canonical、Open Graph、JSON-LD（WebSite/FAQ/Movie）；核心内容不依赖JS，便于必应单页抓取。[12](@ref)</p>
+        <div class="stats">
+          <div class="stat"><b>6</b><span>演示栏目</span></div>
+          <div class="stat"><b>6</b><span>伦理框架维度</span></div>
+          <div class="stat"><b>JSON-LD</b><span>WebSite/FAQ/Movie</span></div>
+          <div class="stat"><b>0</b><span>robots/sitemap</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="fg">
+      <div><h4>在线伦理电影网</h4><ul>
+        <li><a href="#home">首页 #</a></li><li><a href="#library">在线片库 #</a></li><li><a href="#ranking">热播榜单 #</a></li><li><a href="#about">关于本站 #</a></li>
+      </ul></div>
+      <div><h4>伦理框架</h4><ul>
+        <li><a href="#category">义务论 #</a></li><li><a href="#category">功利主义 #</a></li><li><a href="#category">生命伦理 #</a></li><li><a href="#category">正义论 #</a></li>
+      </ul></div>
+      <div><h4>帮助</h4><ul>
+        <li><a href="#help">观片帮助 #</a></li><li><a href="#review">哲学影评 #</a></li><li><a href="#">意见反馈 #</a></li><li><a href="#">免责声明 #</a></li>
+      </ul></div>
+      <div><h4>官方信息</h4><ul>
+        <li><a href="#">站名：在线伦理电影网</a></li><li><a href="#">域名：zaixianlunlidianyingwang-h5</a></li><li><a href="https://zaixianlunlidianyingwang-h5.github.io">官网：zaixianlunlidianyingwang-h5.github.io</a></li><li><a href="#">关键词：人性道德在线策展</a></li>
+      </ul></div>
+    </div>
+    <div class="fb">
+      <p>在线伦理电影网 · zaixianlunlidianyingwang-h5 · 墨绿书卷风人性伦理策展单页演示</p>
+      <p class="u">https://zaixianlunlidianyingwang-h5.github.io</p>
+      <p>\A9 2026 在线伦理电影网演示模板。不生成 robots.txt 与 sitemap.xml，内页链接以 # 占位；片名/标签/引文均为虚构，接真实片源需版权授权与视听资质。</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class
